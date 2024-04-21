@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Tailwind CSS (you can link to a CDN or use a local file) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>My Book Library</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">Add a New Book</h1>
+        <form id="mylibraryform" class="space-y-4">
+            <div>
+                <label for="title" class="block text-sm font-medium text-gray-700">Title:</label>
+                <input type="text" id="title" name="title" required class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div>
+                <label for="author" class="block text-sm font-medium text-gray-700">Author:</label>
+                <input type="text" id="author" name="author" required class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div>
+                <label for="pages" class="block text-sm font-medium text-gray-700">Pages:</label>
+                <input type="number" id="pages" name="pages" required class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Read:</label>
+                <div class="mt-1 space-x-2">
+                    <label><input type="radio" name="read" value="yes" class="mr-1"> Yes</label>
+                    <label><input type="radio" name="read" value="no" class="mr-1"> No</label>
+                </div>
+            </div>
+
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Add Book</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
